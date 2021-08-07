@@ -1,0 +1,18 @@
+input[type=submit],[type=reset]{
+  color: #000;
+  font-weight: 700;
+}
+input[type=submit],[type=reset]:hover{
+  background-color: #E6e6e6;
+}
+form.box{
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(0,0,0,0.37);
+-moz-box-shadow: 7px 7px 11px 0px rgba(0,0,0,0.37);
+box-shadow: 7px 7px 11px 7px rgba(0,0,0,0.37);
+  width: 50%;
+  margin-left: 25%;
+  z-index: -999;
+}
+td{
+  font-weight: 700;
+}

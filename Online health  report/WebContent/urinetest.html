@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>Urine Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style1.css">
+  <style type="text/css">
+  body{
+    background-repeat: no-repeat;
+    background-size: 100%
+
+  }
+  input,textarea,table
+  {
+	  padding: 5px;
+	  border-radius: 5px;
+  }
+  </style>
+  
+</head>
+<body style="background-image:url(medical-563427_960_720.jpg);">
+<ul><li> <a href="profile_d.jsp" >Home </a></li>
+  <li><a href="profile_d.jsp" >Profile </a></li>
+  <li><a href="prescription.html" > Prescriptions </a></li>
+  <li>
+    Tests
+    <ul>
+      <li><a href="bloodtest.html" >Blood Tests </a></li>
+      <li><a href="urinetest.html" >Urine Tests </a></li>
+      <li><a href="X-ray.html" >X-Ray Tests </a></li>
+    </ul>
+  </li>
+  
+ <li><a href="logout_d.jsp" >Logout </a></li>
+	</ul>
+	<br><br><br>
+<br>
+
+<br>
+
+<form method="post" class="box" action="urinetestservlet_d">
+<br>
+<div>
+<h1 align="center">Urine Test Report :<br>
+
+  <br>
+  </h1>
+  <table width:="50%" align="center">
+    <tbody>
+		<tr>
+        <td>Pateint ID : <br>
+        </td>
+        <td><input name="pname" type="text"  required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Date: <br>
+        </td>
+        <td><input name="date" type="date"  required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Blood: <br>
+        </td>
+        <td> <select class="select-style gender" name="blood"  required>
+            <option value="negative">Negative</option>
+            <option value="trace">Trace</option>
+            
+            </select><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Protein: <br>
+        </td>
+        <td> <select class="select-style gender" name="protein">
+            <option value="negative">Negative</option>
+            <option value="trace">Trace</option>
+            
+            </select><br>
+        </td>
+      </tr>
+       <tr>
+        <td>Glucose: <br>
+        </td>
+        <td> <select class="select-style gender" name="glucose">
+            <option value="negative">Negative</option>
+            <option value="trace">Trace</option>
+            
+            </select><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Suger : <br>
+        </td>
+        <td><input type="number"  name="sugar"  required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>PH : <br>
+        </td>
+        <td><input type="number" step="0.01" name="ph"  required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Diagnosis :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="diagnosis" required></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Additional Instructions :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="instructions"></textarea> </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td ></td>
+      </tr>
+      <tr>
+        <td style="padding:30px" align="right">
+            <input name="submit" value="Submit" type="submit">
+          </form>
+        </td>
+        <td>
+          <form method="post" action="showurinetest_d.jsp"> &nbsp; &nbsp;<br>
+          <input name="submit1" value="Previous Report" type="submit"> <big><big><br>
+    </form>
+  </big></big>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+
+  </div>
+
+</body>
+</html>
